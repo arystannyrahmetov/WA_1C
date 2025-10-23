@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExternalDataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74be2dca-af6e-4296-ac4c-f81a448eb253">
+  <producedTypes>
+    <objectType typeId="c2e608d4-cbe9-40ba-880b-eccd7f6da714" valueTypeId="1ea79a60-de2c-432d-a308-fd1b85116071"/>
+  </producedTypes>
+  <name>ЧатWhatsApp</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чат WhatsApp</value>
+  </synonym>
+  <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="e2388e4e-5041-4118-8f24-d4273395cac4"/>
+  <defaultForm>ExternalDataProcessor.ЧатWhatsApp.Form.Авторизация</defaultForm>
+  <attributes uuid="d3ec26a3-6628-46d5-8200-3fb14fcd6f22">
+    <name>idInstance</name>
+    <synonym>
+      <key>ru</key>
+      <value>idInstance</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a40ef736-5080-49fa-ac7a-eb5dddbf2be1">
+    <name>apiTokenInstance</name>
+    <synonym>
+      <key>ru</key>
+      <value>apiTokenInstance</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="3cf52f12-fc4b-4ece-9e41-f58b6ae0d15a">
+    <name>apiUrl</name>
+    <synonym>
+      <key>ru</key>
+      <value>Api url</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="06301e35-2092-433d-984f-88ae954211af">
+    <producedTypes>
+      <objectType typeId="96ad74ec-4134-4217-ab92-847b92575d0e" valueTypeId="3c37c04f-16d2-43aa-bb73-8ef52dc3fd3d"/>
+      <rowType typeId="d8b676d1-a36d-458c-b371-3db777c6e96c" valueTypeId="8095adc7-1c0f-44ad-91a9-14018d686df8"/>
+    </producedTypes>
+    <name>СписокЧатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список чатов</value>
+    </synonym>
+    <attributes uuid="7e3d8248-e999-4168-9d55-a9b34152091a">
+      <name>id</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер телефона</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c6dc6894-70b7-40d2-97f1-267e86660839">
+    <name>Авторизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авторизация</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f799dfef-78c6-4d68-8bb2-70e705355d54">
+    <name>ФормаЧата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма чата</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExternalDataProcessor>
